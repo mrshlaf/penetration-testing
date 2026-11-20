@@ -1,0 +1,15 @@
+# Dependensi
+node_modules/
+package-lock.json
+
+# Berkas Rahasia Lingkungan (Dikecualikan agar tidak bocor ke GitHub Public)
+.env
+.env.local
+.env.*.local
+
+# Sistem Operasi & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

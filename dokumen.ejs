@@ -1,0 +1,25 @@
+<%- include('header') %>
+
+<section class="section">
+  <div class="container row">
+    <div>
+      <h3 class="item-title">Dokumen Akademik</h3>
+      <div class="divider"></div>
+      <ul class="side-menu">
+        <li><a href="/dokumen?file=panduan_kurikulum_2026.txt"><i class="fa fa-file-text-o"></i> Panduan Kurikulum 2026</a></li>
+        <li><a href="/dokumen?file=kalender_akademik_gasal.txt"><i class="fa fa-file-text-o"></i> Kalender Akademik Semester Gasal</a></li>
+        <li><a href="/dokumen?file=tata_tertib_laboratorium.txt"><i class="fa fa-file-text-o"></i> Tata Tertib Laboratorium</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <% if (isi !== null) { %>
+        <div class="doc-content"><%= isi %></div>
+      <% } else { %>
+        <p class="notice">Dokumen "<%= file %>" tidak ditemukan.</p>
+      <% } %>
+    </div>
+  </div>
+</section>
+
+<%- include('footer') %>

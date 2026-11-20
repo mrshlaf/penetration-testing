@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %> - Departemen Teknik Elektro FTUI</title>
+  <link rel="stylesheet" href="/font-awesome.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">"DTE FTUI Unggul, Sinergi, Mendunia"</div>
+      <ul class="top-bar-menu">
+        <li><a href="https://eng.ui.ac.id/kalender-akademik/">KALENDER AKADEMIK</a></li>
+        <li><a href="https://ee.ui.ac.id/informasi-publik/">INFORMASI PUBLIK</a></li>
+        <li><a href="https://ee.ui.ac.id/rencana-strategis-2022-2026/">RENSTRA</a></li>
+        <li><a href="https://ee.ui.ac.id/tracer-study/">TRACER STUDY</a></li>
+        <li><a href="https://eng.ui.ac.id/sdgs/">SDGs</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="https://ee.ui.ac.id/">
+        <img src="/logo-dte.png" width="230" height="69" alt="Departemen Teknik Elektro FTUI">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="https://ee.ui.ac.id/">Beranda</a></li>
+          <li><a href="https://ee.ui.ac.id/sejarah/">Profil</a></li>
+          <li class="<%= menu === 'dokumen' ? 'current' : '' %>"><a href="/dokumen">Akademik</a></li>
+          <li><a href="https://ee.ui.ac.id/laboratorium/">Laboratorium</a></li>
+          <li><a href="https://ee.ui.ac.id/research-group/">Riset &amp; Pengmas</a></li>
+          <li class="<%= menu === 'aspirasi' ? 'current' : '' %>"><a href="/aspirasi">Mahasiswa</a></li>
+          <li><a href="https://ee.ui.ac.id/beasiswa/">Beasiswa</a></li>
+          <li><a href="https://ee.ui.ac.id/alumni/">Alumni &amp; TS</a></li>
+        </ul>
+        <a class="nav-search" href="https://ee.ui.ac.id/?s="><i class="fa fa-search"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-title">
+    <div class="container">
+      <h1 id="portal-title"><%= title %></h1>
+    </div>
+  </div>

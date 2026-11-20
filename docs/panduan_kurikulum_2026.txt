@@ -1,0 +1,27 @@
+========================================================================
+PANDUAN KURIKULUM 2026
+DEPARTEMEN TEKNIK ELEKTRO - FAKULTAS TEKNIK UNIVERSITAS INDONESIA
+========================================================================
+
+1. PENDAHULUAN
+Kurikulum 2026 Departemen Teknik Elektro FTUI dirancang untuk membekali
+mahasiswa dengan kompetensi komprehensif di bidang rekayasa sistem tenaga listrik,
+sistem kendali, telekomunikasi cerdas, sistem komputer, dan keamanan siber.
+
+2. STRUKTUR MATA KULIAH TAHAP SARJANA
+- Semester 1: Kalkulus I, Fisika Dasar I, Kimia Dasar, Pengantar Teknik Elektro.
+- Semester 2: Kalkulus II, Fisika Dasar II, Dasar Pemrograman Komputer, Rangkaian Listrik I.
+- Semester 3: Aljabar Linier, Probabilitas & Stokastik, Medan Elektromagnetik, Elektronika I.
+- Semester 4: Sistem Sinyal & Sistem Linier, Sistem Mikroprosesor, Elektronika II.
+- Semester 5: Keamanan Jaringan Komputer, Jaringan Komputer Lanjut, Pengolahan Sinyal Digital.
+- Semester 6: Rekayasa Perangkat Lunak Terdistribusi, Proyek Keteknikan Elektro.
+- Semester 7: Kerja Praktik, Seminar Proposal Skripsi, Mata Kuliah Pilihan Jalur Peminatan.
+- Semester 8: Skripsi / Tugas Akhir Sarjana Teknik.
+
+3. SYARAT KELULUSAN
+Mahasiswa dinyatakan berhak menyandang gelar Sarjana Teknik (S.T.) apabila telah
+menyelesaikan minimal 144 SKS dengan IPK kumulatif sekurang-kurangnya 2.00 tanpa nilai E.
+
+Ditetapkan di Depok, Kampus UI Gedung I-CELL FTUI
+Ketua Departemen Teknik Elektro FTUI
+========================================================================

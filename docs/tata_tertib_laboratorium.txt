@@ -1,0 +1,21 @@
+========================================================================
+TATA TERTIB PRAKTIKUM LABORATORIUM KOMPUTER & TELEKOMUNIKASI
+DEPARTEMEN TEKNIK ELEKTRO FTUI - TAHUN 2026
+========================================================================
+
+1. KEDISIPLINAN
+- Praktikan wajib hadir 10 menit sebelum praktikum dimulai.
+- Keterlambatan lebih dari 15 menit tanpa izin tertulis berakibat pembatalan sesi.
+- Berpakaian rapi, sopan, berkerah, dan memakai sepatu tertutup di dalam laboratorium.
+
+2. PENGGUNAAN PERANGKAT JARINGAN & KOMPUTER
+- Dilarang keras memodifikasi konfigurasi hardware atau software tanpa instruksi Asisten Laboratorium.
+- Dilarang membawa makanan dan minuman ke area meja kerja workstation.
+- Setiap praktikan bertanggung jawab atas integritas workstation dan instrumen yang digunakan.
+
+3. KESELAMATAN KERJA & INTEGRITAS AKADEMIK
+- Laporkan setiap anomali kelistrikan atau perangkat keras kepada teknisi lab.
+- Segala bentuk kecurangan atau plagiarisme laporan praktikum berakibat sanksi nilai E pada mata kuliah terkait.
+
+Koordinator Laboratorium Komputer FTUI
+========================================================================

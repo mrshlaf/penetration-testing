@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nama": "Ahmad Raihan (Teknik Elektro 2024)",
+    "kategori": "Fasilitas Laboratorium",
+    "pesan": "Mohon peremajaan osiloskop digital di Lab Telekomunikasi Gedung I-CELL FTUI karena beberapa display sudah redup.",
+    "created_at": "2026-11-18T03:15:00.000Z"
+  },
+  {
+    "id": 2,
+    "nama": "Siti Nurhaliza (Teknik Komputer 2023)",
+    "kategori": "Akademik",
+    "pesan": "Jadwal asistensi praktikum Jaringan Komputer mohon disesuaikan agar tidak bentrok dengan kuliah Sistem Tertanam.",
+    "created_at": "2026-11-18T03:15:00.000Z"
+  },
+  {
+    "id": 3,
+    "nama": "Budi Santoso (Teknik Elektro 2025)",
+    "kategori": "Layanan Mahasiswa",
+    "pesan": "Terima kasih atas tersedianya modul praktikum dan template dokumen akademik yang dapat diunduh langsung lewat portal ini.",
+    "created_at": "2026-11-18T03:15:00.000Z"
+  }
+]

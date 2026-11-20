@@ -1,0 +1,59 @@
+<%- include('header') %>
+
+<section class="section">
+  <div class="container row">
+    <div>
+      <h3 class="item-title">Kotak Aspirasi</h3>
+      <div class="divider"></div>
+      <p>Sampaikan masukan mengenai perkuliahan, fasilitas laboratorium, dan layanan departemen. Setiap aspirasi akan ditinjau oleh Sekretariat DTE FTUI.</p>
+    </div>
+
+    <div>
+      <% if (terkirim) { %>
+        <p class="notice notice-ok">Terima kasih, aspirasi Anda sudah terkirim.</p>
+      <% } %>
+
+      <form class="form" action="/aspirasi" method="POST">
+        <label for="nama">Nama Lengkap &amp; Program Studi</label>
+        <input type="text" id="nama" name="nama" placeholder="Contoh: Ahmad Raihan (Teknik Komputer 2024)" required>
+
+        <label for="kategori">Kategori</label>
+        <select id="kategori" name="kategori">
+          <option>Fasilitas Laboratorium</option>
+          <option>Akademik</option>
+          <option>Layanan Mahasiswa</option>
+          <option>Lainnya</option>
+        </select>
+
+        <label for="pesan">Aspirasi</label>
+        <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+        <button type="submit" class="button">Kirim Aspirasi</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section section-list">
+  <div class="container">
+    <div class="title-with-line">
+      <h3 class="item-title">Aspirasi Mahasiswa</h3>
+      <span class="line"></span>
+    </div>
+
+    <ul class="aspirasi-list">
+      <% list.forEach(function (item) { %>
+        <li>
+          <div class="aspirasi-meta">
+            <span class="aspirasi-name"><%= item.nama %></span>
+            <span><%= item.kategori %></span>
+            <span><%= new Date(item.created_at).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) %></span>
+          </div>
+          <div class="aspirasi-text"><%- item.pesan %></div>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+</section>
+
+<%- include('footer') %>

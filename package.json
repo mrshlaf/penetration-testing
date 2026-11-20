@@ -1,0 +1,17 @@
+{
+  "name": "portal-akademik-dte-ftui",
+  "version": "1.0.0",
+  "description": "Portal Informasi & Layanan Aspirasi Akademik Departemen Teknik Elektro FTUI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.1",
+    "dotenv": "^18.0.10",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "author": "Departemen Teknik Elektro FTUI",
+  "license": "ISC"
+}
