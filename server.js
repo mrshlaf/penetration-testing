@@ -14,6 +14,14 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname);
 app.use(express.urlencoded({ extended: true }));
 
+// Header keamanan: batasi sumber konten dan blokir framing/sniffing
+app.use((req, res, next) => {
+  res.setHeader('Content-Security-Policy', "default-src 'self'");
+  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  next();
+});
+
 // Penyimpanan aspirasi: Supabase kalau .env diisi, kalau tidak pakai aspirasi.json
 const supabase = process.env.SUPABASE_URL
   ? createClient(process.env.SUPABASE_URL, process.env.SUPABASE_ANON_KEY)
@@ -40,17 +48,27 @@ async function simpanAspirasi(aspirasi) {
 
 app.get('/', (req, res) => res.redirect('/dokumen'));
 
-// Halaman dokumen: membaca file teks dari folder docs sesuai parameter ?file=
+// Daftar dokumen resmi yang boleh dibuka
+const DOKUMEN_RESMI = [
+  'panduan_kurikulum_2026.txt',
+  'kalender_akademik_gasal.txt',
+  'tata_tertib_laboratorium.txt'
+];
+
+// Halaman dokumen: hanya melayani berkas dari daftar resmi (anti path traversal)
 app.get('/dokumen', (req, res) => {
   const file = req.query.file || 'panduan_kurikulum_2026.txt';
-  const filePath = path.join(__dirname, 'docs', file);
+  const aman = path.basename(file); // buang komponen ../ dari input
 
   let isi = null;
-  if (fs.existsSync(filePath)) {
-    isi = fs.readFileSync(filePath, 'utf8');
+  let status = 200;
+  if (DOKUMEN_RESMI.includes(aman)) {
+    isi = fs.readFileSync(path.join(__dirname, 'docs', aman), 'utf8');
+  } else {
+    status = 403; // berkas di luar daftar resmi ditolak
   }
 
-  res.render('dokumen', { title: 'Dokumen Akademik', menu: 'dokumen', file, isi });
+  res.status(status).render('dokumen', { title: 'Dokumen Akademik', menu: 'dokumen', file, isi });
 });
 
 // Halaman aspirasi: menampilkan dan menyimpan aspirasi mahasiswa

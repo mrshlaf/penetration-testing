@@ -49,7 +49,7 @@
             <span><%= item.kategori %></span>
             <span><%= new Date(item.created_at).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) %></span>
           </div>
-          <div class="aspirasi-text"><%- item.pesan %></div>
+          <div class="aspirasi-text"><%= item.pesan %></div>
         </li>
       <% }); %>
     </ul>
