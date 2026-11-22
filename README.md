@@ -34,3 +34,9 @@ Jika `.env` tidak diisi, aspirasi disimpan ke `aspirasi.json`. Tabel Supabase di
 | `style.css` | Tampilan |
 | `docs/` | Dokumen akademik yang ditampilkan |
 | `*.png`, `*.svg`, `*.woff2`, `font-awesome.min.css` | Logo, gambar, font, dan ikon dari ee.ui.ac.id |
+
+## Laporan akhir
+
+[Laporan PDF](laporan/Laporan_PA_Pentest_Kelompok41.pdf) · [Laporan Word](laporan/Laporan_PA_Pentest_Kelompok41.docx)
+
+Dokumentasi mencakup metode, hasil, analisis, perbaikan, pengujian ulang, dan batas bukti. Kondisi kode sebelum dan sesudah perbaikan ditandai dengan v1-initial dan v2-patched.

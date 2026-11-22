@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-11-22T13:42:37.349957+00:00",
+  "source_tag": "v2-patched",
+  "source_commit": "744b2e60d7bceee2dc38b2be424a7ae487a35ca4",
+  "storage": "JSON lokal terisolasi; Supabase dinonaktifkan",
+  "binding": "127.0.0.1",
+  "runtime": "v24.14.0",
+  "scope": "Regresi HTTP normal dan encoding teks; bukan pengujian eksekusi script di peramban.",
+  "cases": [
+    {
+      "id": "R01",
+      "test": "Pengalihan beranda",
+      "status": "PASS",
+      "result": "302 dan Location /dokumen"
+    },
+    {
+      "id": "R02",
+      "test": "Dokumen resmi: panduan_kurikulum_2026.txt",
+      "status": "PASS",
+      "result": "200; isi cocok dengan dokumen pada tag perbaikan"
+    },
+    {
+      "id": "R03",
+      "test": "Dokumen resmi: kalender_akademik_gasal.txt",
+      "status": "PASS",
+      "result": "200; isi cocok dengan dokumen pada tag perbaikan"
+    },
+    {
+      "id": "R04",
+      "test": "Dokumen resmi: tata_tertib_laboratorium.txt",
+      "status": "PASS",
+      "result": "200; isi cocok dengan dokumen pada tag perbaikan"
+    },
+    {
+      "id": "R05",
+      "test": "Forum awal",
+      "status": "PASS",
+      "result": "200; datastore awal kosong"
+    },
+    {
+      "id": "R06",
+      "test": "Pengiriman pesan normal",
+      "status": "PASS",
+      "result": "POST 302; pesan normal muncul pada GET berikutnya"
+    },
+    {
+      "id": "R07",
+      "test": "Encoding teks HTML nonaktif",
+      "status": "PASS",
+      "result": "Karakter khusus tampil sebagai teks; tidak terbentuk elemen b"
+    },
+    {
+      "id": "R08",
+      "test": "Header keamanan",
+      "status": "PASS",
+      "result": "Tiga nilai header sesuai pada /dokumen dan /aspirasi"
+    },
+    {
+      "id": "R09",
+      "test": "Nama dokumen biasa di luar daftar",
+      "status": "PASS",
+      "result": "403; berkas biasa di luar daftar tidak dibaca"
+    },
+    {
+      "id": "R10",
+      "test": "Persistensi JSON setelah restart",
+      "status": "PASS",
+      "result": "Dua rekaman tetap ada setelah restart; teks khusus tetap di-escape"
+    }
+  ],
+  "passed": 10,
+  "failed": 0,
+  "error": null
+}
